@@ -54,6 +54,7 @@ const MediaUploader = ({
   return (
     <CldUploadWidget
       uploadPreset="editoya_pr"
+      
       options={{
         multiple: false,
         resourceType: "image",
