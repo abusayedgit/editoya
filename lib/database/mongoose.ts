@@ -23,7 +23,7 @@ export const connectToDatabase = async () => {
   cached.promise = 
     cached.promise || 
     mongoose.connect(MONGODB_URL, { 
-      dbName: 'editoya', bufferCommands: false 
+      dbName: process.env.MONGODB_NAME, bufferCommands: false 
     })
 
   cached.conn = await cached.promise;
